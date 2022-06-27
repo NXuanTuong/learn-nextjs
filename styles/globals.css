@@ -1,16 +1,10 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+.menu {
+  @apply bg-red-500 p-3 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium
 }
-
-* {
-  box-sizing: border-box;
+.menu__item {
+  @apply hover:text-white px-3 py-3 hover:bg-blue-700
 }
