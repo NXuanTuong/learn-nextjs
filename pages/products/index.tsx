@@ -20,7 +20,7 @@ const Products = ({ products }: Props) => {
 	)
 }
 
-// Chạy ở server
+// Chạy ở server (ưu tiên chạy đầu)
 export const getStaticProps = async (context: any) => {
 	console.log(context)
 	const res = await fetch('https://jsonplaceholder.typicode.com/users')

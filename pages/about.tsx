@@ -1,12 +1,15 @@
 import React from 'react'
-import MainLayout from '../layouts/MainLayout'
+import LayoutAdmin from '../components/Layout/admin'
+import MainLayout from '../components/Layout'
 
 type Props = {}
 
 const About = (props: Props) => {
   return (
-    <MainLayout title='About'>About</MainLayout>
+    <div>About</div>
   )
 }
+
+About.Layout = LayoutAdmin
 
 export default About
