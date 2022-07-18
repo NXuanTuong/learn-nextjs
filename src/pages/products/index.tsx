@@ -6,15 +6,18 @@ type Props = {
 }
 
 const Products = ({ products }: Props) => {
-	console.log(products)
 	return (
 		<div>
 			{products.map((item) => {
-				return <div className='m-auto p-3' key={item.id}>
-					<ul>
-						<li><Link href={`/products/${item.id}`}>{item.name}</Link></li>
-					</ul>
+				return (
+					<div className="m-auto p-3" key={item.id}>
+						<ul>
+							<li className="no-underline text-red-500">
+								<Link href={`/products/${item.id}`}>{item.name}</Link>
+							</li>
+						</ul>
 					</div>
+				)
 			})}
 		</div>
 	)

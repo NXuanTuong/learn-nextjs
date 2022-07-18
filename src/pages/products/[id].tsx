@@ -7,7 +7,6 @@ type Props = {
 }
 
 const ProductDetail = ({ product }: Props) => {
-	console.log(product)
 	const route = useRouter()
 	return <div className="m-auto p-3">{JSON.stringify(route.query)}</div>
 }

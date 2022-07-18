@@ -1,4 +1,14 @@
 {
+  "products": [
+    {
+      "id": 1,
+      "name": "Product A update 2"
+    },
+    {
+      "id": 3,
+      "name": "Product C update"
+    }
+  ],
   "users": [
     {
       "email": "admin@gmail.com",
