@@ -19,9 +19,9 @@ const useProduct = () => {
 		const details = await read(id)
 		return details
 	}
-	const update = async (id) => {
-		await edit(id)
-		mutate(data.find((item) => (item.id === data.id ? item : data.id)))
+	const update = async (product) => {
+		await edit(product)
+		mutate(data.map((item) => (item.id === data.id ? product : item)))
 	}
 	return {
 		data,

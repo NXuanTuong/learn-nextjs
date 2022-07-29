@@ -1,5 +1,5 @@
+import LayoutEmpty from '@/components/Layout/empty'
 import React from 'react'
-import LayoutEmpty from '../components/Layout/empty'
 
 type Props = {}
 

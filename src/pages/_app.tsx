@@ -1,7 +1,7 @@
-import { AppPropsWithLayout } from '../models/layout'
-import Layout from '../components/Layout'
+import instance from '@/api/instance'
+import Layout from '@/components/Layout'
+import { AppPropsWithLayout } from '@/models/layout'
 import { SWRConfig } from 'swr'
-import instance from '../api/instance'
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 	const LayoutWrapper = Component.Layout ?? Layout

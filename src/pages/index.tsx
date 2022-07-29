@@ -1,6 +1,6 @@
 import useProduct from '@/hooks/use-product'
 import Link from 'next/link'
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 
 const Home = () => {
 	const { data: products, error, create, remove } = useProduct()
@@ -18,7 +18,7 @@ const Home = () => {
 				</div>
 			))}
 
-			<button onClick={() => create({ id: 3, name: 'Product C' })}>Add</button>
+			<button >Add</button>
 		</div>
 	)
 }
